@@ -1,0 +1,128 @@
+body, .default{
+    line-height: 1.6em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    color: #669;
+}
+img{
+    border:0;
+}
+h1{
+    padding:5px 5px 0 5px;
+    margin: 0 0 15px 0;
+    color: #00cccc;
+    font-size: 2em;
+    
+}
+div.tab{
+    background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/izqTab.gif);
+        background-repeat:no-repeat;
+    display:block;
+    float:left; 
+    /*Es el alto de la imagen*/ 
+    height:21px; 
+    padding:0;
+    /* Separacion entre tabuladores*/ 
+    margin:0 1px 0 0;
+
+    
+        
+}
+div.tab div{
+    background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/derTab.gif);
+        background-repeat:no-repeat;
+        background-position:top right; 
+        height:21px; 
+        float:left; 
+        margin:0;
+
+}
+div.tab div a{
+    /* * Las imagenes de la izq y der * 
+    tienen un ancho de 8px,
+    por lo tanto * 
+    dejamos esta espacio para que se completen *
+    las esquinas */
+    margin:0 8px;
+    /* Las imagenes tiene un alto de 21px */ 
+    height:21px; line-height:21px; 
+    background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/centroTab.gif); 
+    display:block; 
+    text-decoration:none; 
+    vertical-align:middle; 
+    float:left;
+    background-repeat: repeat; 
+
+}
+/** * Solamente hay un elemento activo * en la pagina, por lo tanto * se utiliza un ID ( # ), en lugar * de una clase ( . ) */ 
+#actual{ background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/actIzqTab.gif); }
+#actual div{ background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/actDerTab.gif); }
+#actual div a{ background-image:url(http://icursos.net/cursos/HTML/Leccion03/IntroduccionCSS/LaboratorioCSS1/img/actCentroTab.gif); }
+a:link,a:visited{ color:#226275; text-decoration:underline; }
+a:active,a:hover{ color:#39a5c4; }
+
+ 
+
+#one-column-emphasis{
+    margin:45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+#one-column-emphasis caption
+{font-size: 20px;}
+#one-column-emphasis th{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 15px;
+    color: #039;
+}
+#one-column-emphasis td{
+    padding: 10px 15px;
+    color: #669;
+    border-top: 1px solid #e8edff;
+}
+.oce-first{
+    background: #d0dafd;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+#one-column-emphasis tr:hover td{
+    color: #339;
+    background: #eff2ff;
+}
+
+caption{
+    font-size:large;
+    height:25pt;
+    font-weight: bold;
+    color:#ffffff;
+    background: #cc99ff;
+    line-height: 30px;
+ 
+  
+}
+th{height:20pt;
+    font-weight: bold;
+    color:#000033;
+    background: #ff9933;
+   vertical-align:text-bottom;
+   
+    
+}
+td{
+    text-align: justify;
+    color:#000033;
+    
+    font-size: small;
+    vertical-align: middle;
+        
+    
+}
+.row1{background: #ff9999;}
+.row2{background: #ffcc66;}
+.row3{background:#ffff99; }
+          
+    
+

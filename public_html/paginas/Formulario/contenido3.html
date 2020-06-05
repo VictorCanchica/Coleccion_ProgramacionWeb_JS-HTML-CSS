@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
+        <script type="text/javascript" src="validaciones.js"></script>
+
+         <title>Contenido 3</title>
+    </head>
+    <body>
+        <h1>Sitio Web con tabuladores</h1>
+        <div class="tab">
+            <div>
+                <a href="../sumar/contenido1.html">Suma</a>
+            </div>
+            </div>
+        <div class="tab">
+            
+            <div> 
+                 <a href="../RollOver/contenido2.html">Rollover</a>
+                </div>
+            </div>
+         <div class="tab" id="actual">
+            
+            <div> 
+                 <a href="contenido3.html">Formulario</a>
+                </div>
+            </div>
+        <br>
+        <form name="form1" action="/recursosEnServidor" method="post" onsubmit="validarForma(this)">
+            <input type="hidden" name="oculto" value="valorOculto">
+            <table width="200" id="one-column-emphasis">
+                <caption>
+                    Formulario Registro Datos
+                </caption>
+                <tr>
+                    <td class="oce-first">
+                        Usuario:(*)
+                    <td>
+                        <input class="default" type="text"
+                               name="usuario" value="Escribir Usuario"
+                               onfocus="this.select();">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Password:(*)
+                    <td>
+                        <input class="default" type="password"
+                               name="password" onfocus="this.select();">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Tecnolog&iacute;as de Informaci&oacute;n:(*)
+                    <td>
+                        Java<input type="checkbox"  name="tecnologia" value="java">
+                                   PHP<input type="checkbox"  name="tecnologia" value="php">
+                                   &nbsp;&nbsp;&nbsp;
+                                   .Net<input type="checkbox"  name="tecnologia" value="net">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Genero:(*)
+                    <td>
+                        Hombre<input type="radio"  name="genero" value="H">
+                                   &nbsp;&nbsp;&nbsp;
+                                   Mujer<input type="radio"  name="genero" value="M">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Ocupaci&oacute;n:(*)
+                    <td>
+                        <select name="ocupacion" class="default">
+                            <option value="1">Seleccionar</option>
+                            <option value="2">Ingeniero</option>
+                            <option value="3">Profesor</option>
+                            <option value="4">Jubilado</option>
+                            <option value="5">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="oce-first">
+                        Generos Musicales:(*)
+                    <td>
+                        <select name="Generos" multiple class="default">
+                            <option value="Salsa">Salsa</option>
+                            <option value="Cumbia">Cumbia</option>
+                            <option value="Metal">Metal</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Reggae">Reggae</option>
+                        </select>
+                    </td>
+                </tr>
+<tr>
+                         <td class="oce-first">
+                             Comentarios
+                         </td>
+                         <td style="text-align: center">
+                             <textarea style="text-align: center" name="comentarios" cols="15" rows="3" class="default">
+                             Escribir texto
+                             </textarea>
+                         </td>
+                     </tr>
+                        <tr style="text-align: center">
+                            <td>
+                        <input type="reset" value="limpiar" class="default">
+                            </td>
+                             <td>
+                        <input type="submit" value="enviar" class="default">
+                            </td>
+                        </tr>
+                </table>
+        </form>
+        <br>
+        <a href="../../index.html">Regresar</a>
+    </body>
+</html>
